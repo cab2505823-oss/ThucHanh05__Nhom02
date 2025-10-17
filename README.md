@@ -9,8 +9,6 @@
 * **`Infographic.png`**: File infographic về "Lợi ích của công nghệ số" (Nhiệm vụ 2.1).
 * **`Loi_ich_Cong_Nghe_So.mp4`**: Video ngắn 30 giây (Nhiệm vụ 2.2).
 * **`index.html`**: Trang web HTML hiển thị sản phẩm (Nhiệm vụ 3.1).
-* **(CÒN THIẾU)**: File `LICENSE` (Giấy phép CC BY).
-* **(CÒN THIẾU)**: File ảnh chụp màn hình lịch sử chỉnh sửa Google Docs.
 
 ## Trích dẫn nguồn AI và Bản quyền
 
