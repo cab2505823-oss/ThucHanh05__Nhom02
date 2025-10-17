@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lợi ích của công nghệ số – Infographic & Video</title>
+  <meta name="description" content="Trình bày infographic và video minh hoạ về lợi ích của công nghệ số trong học tập." />
+  <style>
+    /* ====== Thiết kế tổng thể ====== */
+    :root{
+      --bg: #f6f8fb; --card:#fff; --text:#0f172a; --muted:#5b6575; --border:#e8edf2; --accent:#2563eb;
+      --shadow: 0 6px 24px rgba(2,6,23,.08), 0 2px 8px rgba(2,6,23,.06);
+      --radius: 18px; --max: 1100px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b1020; --card:#0f162b; --text:#e6ecff; --muted:#a1accb; --border:#1e2640; --shadow: 0 10px 30px rgba(0,0,0,.35); }
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font:16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Arial; color:var(--text); background:
+      radial-gradient(1200px 800px at 20% -10%, rgba(37,99,235,.12), transparent),
+      radial-gradient(1000px 700px at 120% 10%, rgba(14,165,233,.12), transparent),
+      var(--bg);
+    }
+    .container{max-width:var(--max); margin:auto; padding:28px 18px 60px}
+    header{padding:32px 0 12px}
+    h1{margin:0 0 8px; font-weight:800; letter-spacing:.2px; font-size:clamp(28px,2.4vw + 14px,44px)}
+    .lead{color:var(--muted); margin:0}
+    /* ====== Lưới card ====== */
+    .grid{display:grid; gap:22px; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); align-items:start; margin:26px 0}
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:18px; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; height:100%;
+    }
+    .card:hover{ transform: translateY(-3px); box-shadow:0 14px 36px rgba(2,6,23,.12); border-color:#dbe3f0 }
+    h2{margin:6px 0 12px; font-size:clamp(18px,1.2vw + 12px,24px)}
+    .muted{color:var(--muted); font-size:.98rem}
+    /* ====== Media ====== */
+    .media{position:relative; border-radius:14px; overflow:hidden; background:#0b1020; border:1px solid var(--border)}
+    /* đảm bảo đồng tỷ lệ cho ảnh/video */
+    .ratio{aspect-ratio: 16/9; width:100%}
+    img, video{display:block; width:100%; height:100%; object-fit:cover}
+    figcaption{color:var(--muted); font-size:.95rem; margin-top:8px}
+    /* ====== Nút hành động ====== */
+    .actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px; padding:9px 14px; border-radius:12px; text-decoration:none; font-weight:600;
+      border:1px solid var(--border); background:#eef3ff; color:#0b2b7a;
+    }
+    .btn:hover{filter:brightness(.98)}
+    .btn.ghost{background:transparent; color:var(--text)}
+    /* ====== Phần mô tả ====== */
+    .prose{font-size:1.02rem}
+    footer{margin-top:24px; color:var(--muted); font-size:.95rem}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Lợi ích của công nghệ số trong học tập</h1>
+      <p class="lead">Infographic (PNG) &amp; video (MP4) với bố cục hiện đại, tối ưu cho cả màn hình lớn và nhỏ.</p>
+    </header>
+
+    <section class="grid">
+      <!-- Card: Infographic -->
+      <article class="card">
+        <h2>Infographic</h2>
+        <figure>
+          <div class="media">
+            <img class="ratio" src="./Infographic.png" alt="Infographic về lợi ích của công nghệ số trong học tập" />
+          </div>
+          <figcaption>Hình 1. Tóm tắt các lợi ích nổi bật.</figcaption>
+        </figure>
+        <div class="actions">
+          <a class="btn" href="./Infographic.png" download>⬇ Tải infographic</a>
+          <a class="btn ghost" href="./Infographic.png" target="_blank" rel="noopener">🔍 Xem ảnh gốc</a>
+        </div>
+      </article>
+
+      <!-- Card: Video -->
+      <article class="card">
+        <h2>Video minh hoạ</h2>
+        <div class="media">
+          <video class="ratio" controls preload="metadata">
+            <source src="./Loi_Ich_Cong_Nghe_So.mp4" type="video/mp4" />
+            Trình duyệt của bạn không hỗ trợ phát video này.
+          </video>
+        </div>
+        <p class="muted" style="margin-top:8px">Video ngắn minh hoạ các lợi ích chính của công nghệ số.</p>
+        <div class="actions">
+          <a class="btn" href="./Loi_Ich_Cong_Nghe_So.mp4" download>⬇ Tải video</a>
+          <button class="btn ghost" onclick="document.querySelector('video').requestFullscreen?.()">⛶ Toàn màn hình</button>
+        </div>
+      </article>
+
+      <!-- Card: Mô tả -->
+      <article class="card">
+        <h2>Mô tả ngắn</h2>
+        <p class="prose">
+          Công nghệ số giúp cá nhân hoá việc học, mở rộng truy cập tài nguyên, tăng hợp tác trực tuyến
+          và hỗ trợ đánh giá dựa trên dữ liệu. Infographic trình bày nhanh các ý chính; video cho thấy
+          cách áp dụng trong lớp học và tự học.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      Gợi ý: để trang mượt hơn khi nộp bài, mở bằng <em>Live Server</em> trong VS Code hoặc deploy GitHub Pages.
+    </footer>
+  </div>
+</body>
+</html>
